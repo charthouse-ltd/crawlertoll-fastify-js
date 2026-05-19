@@ -1,0 +1,74 @@
+{
+  "name": "@crawlertoll/fastify",
+  "version": "0.1.0",
+  "description": "Fastify plugin for the AI-crawler economy. One register() call wires bot detection, Web Bot Auth verification, RSL 1.0 policy enforcement, and HTTP 402 issuance into any Fastify app.",
+  "license": "Apache-2.0",
+  "author": "Charthouse Ltd",
+  "homepage": "https://crawlertoll.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhrzxxw9dn-web/crawlertoll-fastify-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nhrzxxw9dn-web/crawlertoll-fastify-js/issues"
+  },
+  "keywords": [
+    "fastify",
+    "fastify-plugin",
+    "ai-crawler",
+    "pay-per-crawl",
+    "web-bot-auth",
+    "rsl",
+    "rsl-1.0",
+    "bot-detection",
+    "gptbot",
+    "claudebot",
+    "http-402",
+    "x402",
+    "crawler-toll"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "peerDependencies": {
+    "fastify": "^4.0.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "@crawlertoll/core": "^0.1.0",
+    "fastify-plugin": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "fastify": "^5.2.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
