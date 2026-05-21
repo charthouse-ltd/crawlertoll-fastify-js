@@ -202,7 +202,7 @@ app.register(async (scoped) => {
 Run them:
 
 ```bash
-git clone https://github.com/nhrzxxw9dn-web/crawlertoll-fastify-js
+git clone https://github.com/charthouse-ltd/crawlertoll-fastify-js
 cd crawlertoll-fastify-js
 npm install
 npm test
@@ -226,3 +226,7 @@ If your framework isn't listed, use `@crawlertoll/core`'s `decide()` directly â€
 ## License
 
 [Apache-2.0](./LICENSE). All specs implemented are open standards under their own licenses.
+
+## Trademark
+
+CrawlerTollâ„¢ is a trademark of Charthouse Ltd.

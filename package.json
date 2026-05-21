@@ -1,16 +1,16 @@
 {
   "name": "@crawlertoll/fastify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fastify plugin for the AI-crawler economy. One register() call wires bot detection, Web Bot Auth verification, RSL 1.0 policy enforcement, and HTTP 402 issuance into any Fastify app.",
   "license": "Apache-2.0",
   "author": "Charthouse Ltd",
   "homepage": "https://crawlertoll.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhrzxxw9dn-web/crawlertoll-fastify-js.git"
+    "url": "git+https://github.com/charthouse-ltd/crawlertoll-fastify-js.git"
   },
   "bugs": {
-    "url": "https://github.com/nhrzxxw9dn-web/crawlertoll-fastify-js/issues"
+    "url": "https://github.com/charthouse-ltd/crawlertoll-fastify-js/issues"
   },
   "keywords": [
     "fastify",
